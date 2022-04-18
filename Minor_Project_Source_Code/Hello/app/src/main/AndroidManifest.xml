@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hello">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Book Tender"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hello"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".help"
+            android:label="Help"
+            android:parentActivityName=".set"></activity>
+        <activity android:name=".pf" />
+        <activity android:name=".dsb" />
+        <activity
+            android:name=".Wishlist"
+            android:label="WishList"
+            android:parentActivityName=".set" />
+        <activity
+            android:name=".Wish"
+            android:label="WishList"
+            android:parentActivityName=".set" />
+        <activity
+            android:name=".set"
+            android:label="Settings"
+            android:parentActivityName=".dashboard" />
+        <activity
+            android:name=".thanks"
+            android:label="Feedback" />
+        <activity
+            android:name=".feedb"
+            android:label="Feedback" />
+        <activity
+            android:name=".scifi"
+            android:label="Category"
+            android:parentActivityName=".dashboard" />
+        <activity
+            android:name=".descp"
+            android:label="Book Details"
+            android:parentActivityName=".dashboard" />
+        <activity android:name=".review" />
+        <activity
+            android:name=".profile"
+            android:label="Profile"
+            android:parentActivityName=".dashboard" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Book Tender" />
+        <activity
+            android:name=".start"
+            android:label="Book Tender">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".Signup"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".dashboard"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

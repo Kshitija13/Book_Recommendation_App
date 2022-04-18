@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lot"
+
+    android:orientation="vertical"
+    tools:context=".dashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/set"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/pro"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:contentDescription="@string/todo"
+            android:padding="5dp"
+            android:src="@drawable/user" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/courgette"
+                    android:text="Book Tender"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/app_name"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#FFFF"
+                    android:elevation="5dp" tools:targetApi="lollipop">
+
+                    <EditText
+                        android:id="@+id/ett"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="monospace"
+                        android:text="Salvaged"
+                        android:textSize="20sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_alignParentEnd="true" />
+
+                    <ImageView
+                        android:id="@+id/but1"
+                        android:layout_width="16dp"
+                        android:layout_height="21dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/search" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/categories2"
+                android:layout_width="249dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginEnd="268dp"
+                android:layout_marginRight="268dp"
+                android:fontFamily="monospace"
+                android:text="Recommended Books"
+                android:textColor="#252222"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/featured_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="-5dp"
+                    tools:ignore="DuplicateIds" />
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/Categories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="@string/categories"
+                        android:textColor="#252222"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_below="@id/Categories"
+                        android:id="@+id/categoryrecycler"
+                        tools:ignore="DuplicateIds"
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="140dp"
+
+                        />
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/Latest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="@string/latest_releases"
+                        android:textColor="#201E1E"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_below="@id/Latest"
+                        android:id="@+id/latestrecycler"
+                        tools:ignore="DuplicateIds"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="280dp"
+
+                        />
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

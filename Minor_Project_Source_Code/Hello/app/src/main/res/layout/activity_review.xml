@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tile"
+        android:text="BOOK A"
+
+
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        android:textColor="#260451"
+        tools:ignore="MissingConstraints"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="143dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/booke"
+        tools:layout_editor_absoluteY="111dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOK TITLE"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="94dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author Name"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="134dp"
+        tools:ignore="MissingConstraints" />
+
+    <RatingBar
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="4"
+        tools:layout_editor_absoluteX="178dp"
+        tools:layout_editor_absoluteY="167dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="387dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/studying_animal_species_that_don_t_experience_the_effects_of_aging_have_led_to_treatments_to_prevent_aging_in_humans_by_improving_dna_repair_protein_folding_immunity_to_cancer_and_selectively_eliminating_old_cells"
+        android:textSize="17dp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="357dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?attr/actionModeShareDrawable"
+        tools:layout_editor_absoluteX="355dp"
+        tools:layout_editor_absoluteY="94dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/star_off"
+        tools:layout_editor_absoluteX="355dp"
+        tools:layout_editor_absoluteY="156dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:background="#FFFF"
+        android:fontFamily="cursive"
+        android:text="Start Reading"
+        android:textAllCaps="false"
+        android:textColor="#260451"
+
+        android:textSize="25dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

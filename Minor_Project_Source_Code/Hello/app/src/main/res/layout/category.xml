@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="5dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:padding="22dp">
+
+        <ImageView
+            android:id="@+id/c_img"
+            android:layout_width="51dp"
+            android:layout_height="119dp"
+
+            android:src="@drawable/booka" />
+
+        <TextView
+            android:id="@+id/c_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/c_img"
+            android:text="Category"
+            android:textColor="#120101"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/c_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toRightOf="@id/c_img"
+            android:text="Lorem ipsum dolor sit amet." />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

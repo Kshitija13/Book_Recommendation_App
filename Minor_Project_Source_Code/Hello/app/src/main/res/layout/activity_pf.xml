@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lot">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="22dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="61dp">
+
+
+        <Button
+            android:id="@+id/but4"
+            android:layout_width="211dp"
+            android:layout_height="42dp"
+
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="406dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginRight="108dp"
+            android:background="@drawable/button"
+            android:text="Feedback"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#858727B0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.78"
+            app:layout_constraintWidth_percent=".8" />
+
+        <Button
+            android:id="@+id/but9"
+            android:layout_width="240dp"
+            android:layout_height="44dp"
+
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="406dp"
+            android:layout_marginEnd="106dp"
+            android:layout_marginRight="108dp"
+            android:background="@drawable/button"
+            android:text="Add to WishList"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#858727B0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.519"
+            app:layout_constraintWidth_percent=".8" />
+
+        <ImageView
+            android:id="@+id/l_img"
+            android:layout_width="163dp"
+            android:layout_height="240dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/twlght"
+            app:layout_constraintBottom_toTopOf="@+id/l_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.188" />
+
+
+        <TextView
+            android:id="@+id/l_title"
+            android:layout_width="152dp"
+            android:layout_height="66dp"
+
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="25dp"
+            android:text="CrossRoads of Twilight"
+            android:textColor="#0B0000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/l_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.826"
+            app:layout_constraintLeft_toRightOf="@+id/l_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/l_author"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="76dp"
+            android:text="Jonas Lewi"
+            android:textColor="#190303"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/l_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.716"
+            app:layout_constraintLeft_toRightOf="@+id/l_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.072" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:rating="4"
+            app:layout_constraintBottom_toTopOf="@+id/l_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.654"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.361" />
+
+        <TextView
+            android:id="@+id/l_desc"
+            android:layout_width="340dp"
+            android:layout_height="189dp"
+            android:text="Crossroads of Twilight is a 2016 science fiction novel by American author Pierce Brown, the third in his Red Rising trilogy. Morning Star picks up as the lowborn Darrow escapes capture and resumes his campaign against the tyrannical Sovereign of the Society."
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.669" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="107dp"
+            android:layout_height="28dp"
+            android:text="Summary"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.453" />
+
+        <ImageView
+            android:id="@+id/dwn"
+            android:layout_width="30dp"
+            android:layout_height="33dp"
+            android:background="#0B0A0B"
+            app:layout_constraintBottom_toTopOf="@+id/l_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.527"
+            app:srcCompat="@android:drawable/stat_sys_download"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:onClick="GetDataToTextView"
+            android:text="Download Book"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/l_desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.978"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

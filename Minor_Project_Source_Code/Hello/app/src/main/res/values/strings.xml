@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Hello</string>
+    <string name="descp">Reccomended books based on your interests</string>
+    <string name="descp1">Search...</string>
+    <string name="descp2">Reccomended books based on your interests</string>
+    <string name="descp3">Reccomended books based on your interests</string>
+    <string name="descp4">Reccomended books based on your interests</string>
+    <string name="reccomended_books">Reccomended Books</string>
+    <string name="latest_releases">Latest Releases</string>
+    <string name="categories">Categories</string>
+    <string name="booktender">BookTender</string>
+    <string name="todo">TODO</string>
+
+    <string name="studying_animal_species_that_don_t_experience_the_effects_of_aging_have_led_to_treatments_to_prevent_aging_in_humans_by_improving_dna_repair_protein_folding_immunity_to_cancer_and_selectively_eliminating_old_cells">Studying animal species that don\'t experience the effects of aging have led to treatments to prevent aging in humans: by improving DNA repair, protein folding, immunity to cancer, and selectively eliminating old cells.</string>
+    <string name="b5" />
+    <string name="title_activity_night">night</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_navigation">navigation</string>
+    <string name="title_activity_nav">nav</string>
+    <string name="title_activity_set">set</string>
+
+    <string name="Open">NavBar</string>
+    <string name="Close">NavBar</string>
+
+
+</resources>
